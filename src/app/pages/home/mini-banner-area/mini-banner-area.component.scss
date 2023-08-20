@@ -1,0 +1,45 @@
+.banner-area {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+    justify-content: center; 
+}
+
+.banner-area .banner-box {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+}
+
+.banner-area .banner-box a {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.banner-area .banner-box img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.banner-area .banner-box:hover img {
+    transform: scale(1.2);
+    transition: .6s;
+}
+
+// responsiveness 
+@media (max-width:768px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+    }
+}
