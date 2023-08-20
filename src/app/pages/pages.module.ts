@@ -3,20 +3,10 @@ import { CommonModule } from '@angular/common';
 
 import { PagesRoutingModule } from './pages-routing.module';
 import { PagesComponent } from './pages.component';
-import { HeaderModule } from '../shared/components/header/header.module';
-import { FooterModule } from '../shared/components/footer/footer.module';
-import { AboutComponent } from './about/about.component';
-
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
-  declarations: [
-    PagesComponent,
-  ],
-  imports: [
-    CommonModule,
-    PagesRoutingModule,
-    HeaderModule,
-    FooterModule
-  ]
+  declarations: [PagesComponent],
+  imports: [CommonModule, PagesRoutingModule, SharedModule],
 })
-export class PagesModule { }
+export class PagesModule {}
