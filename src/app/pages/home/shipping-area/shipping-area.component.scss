@@ -1,14 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-/*
-   Free Shipping Area Start
-=================================*/
+
 .container {
   padding-top: 40px;
   padding-bottom: 40px;
   max-width: 1320px;
   margin: auto;
 
-  @media only screen and (min-width: 1400px) {
+  @media only screen and (max-width: 1400px) {
     max-width: 1140px;
   }
 
@@ -81,6 +79,3 @@
     }
   }
 }
-/*
-   Free Shipping Area End
-=================================*/
