@@ -3,10 +3,21 @@ import { CommonModule } from '@angular/common';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ProductCardComponent } from './components/lazy-components/product-card/product-card.component';
+import { ProductBarComponent } from './components/lazy-components/product-bar/product-bar.component';
 
 @NgModule({
-  declarations: [HeaderComponent, FooterComponent, ProductCardComponent],
+  declarations: [
+    HeaderComponent,
+    FooterComponent,
+    ProductCardComponent,
+    ProductBarComponent,
+  ],
   imports: [CommonModule],
-  exports: [HeaderComponent, FooterComponent, ProductCardComponent],
+  exports: [
+    HeaderComponent,
+    FooterComponent,
+    ProductCardComponent,
+    ProductBarComponent,
+  ],
 })
 export class SharedModule {}
