@@ -8,9 +8,9 @@ import { BigBannerAreaComponent } from './big-banner-area/big-banner-area.compon
 import { MakeCallAreaComponent } from './make-call-area/make-call-area.component';
 import { ShippingAreaComponent } from './shipping-area/shipping-area.component';
 import { NewsletterComponent } from '../components/newsletter/newsletter.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
-  imports: [CommonModule, HomeRoutingModule],
   declarations: [
     HomeComponent,
     MiniBannerAreaComponent,
@@ -19,5 +19,6 @@ import { NewsletterComponent } from '../components/newsletter/newsletter.compone
     ShippingAreaComponent,
     NewsletterComponent,
   ],
+  imports: [CommonModule, HomeRoutingModule, SharedModule],
 })
 export class HomeModule {}
