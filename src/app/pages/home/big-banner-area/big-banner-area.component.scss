@@ -1,0 +1,98 @@
+.big-banner-area {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.big-banner {
+    width: 100%;
+    height: 330px;
+    background-image: url('../../../../assets/images/banner-slider/slider-4.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    border-radius: 12px;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.big-banner .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    // background-color: var(--secondary-color);
+    background-color: #272727;
+    border-radius: 12px;
+    opacity: .3;
+}
+
+.big-banner .banner-content {
+    position: absolute;
+    padding: 0px 20px;
+}
+
+.big-banner .banner-content h5 {
+    // color: var(--color-white);
+    color: white;
+    // font-size: var(--size-lg);
+    font-size: 1.5rem;
+    // font-weight: var(--text-bold);
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 0px;
+    
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.big-banner .banner-content h3 {
+    // color: var(--color-white);
+    color: white;
+    // font-size: var(--size-xxl);
+    font-size: 2.5rem;
+    // font-weight: var(--text-bold);
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0px 0px 10px 0px;
+
+    
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.big-banner .banner-content h6 {
+    // color: var(--color-white);
+    color: white;
+    // font-size: var(--size-md);
+    font-size: 0.938rem;
+    padding: 0px 0px 15px 0px;
+}
+
+// margin-block-start && margin-block-end problem
+h3, h5, h6 {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+
+.my-btn {
+    // border: 1px solid var(--color-99);
+    border: 1px solid #1E1B38;
+    border-radius: 25px !important;
+    // font-size: var(--size-sm);
+    font-size: 0.8rem;
+    // font-weight: var(--text-normal);
+    font-weight: 400;
+    color: var(--color-white);
+    color: white;
+    // background-color: var(--color-99);
+    background-color: #1E1B38;
+    padding: 12px 30px;
+    text-transform: uppercase;
+}
+
+.my-btn:hover {
+    opacity: .8;
+}

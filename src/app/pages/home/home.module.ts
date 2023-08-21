@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { MiniBannerAreaComponent } from './mini-banner-area/mini-banner-area.component';
+import { BigBannerAreaComponent } from './big-banner-area/big-banner-area.component';
 
 
 
@@ -11,6 +12,7 @@ import { MiniBannerAreaComponent } from './mini-banner-area/mini-banner-area.com
   declarations: [
     HomeComponent,
     MiniBannerAreaComponent,
+    BigBannerAreaComponent,
   ],
   imports: [
     CommonModule,
