@@ -7,6 +7,7 @@ import { MiniBannerAreaComponent } from './mini-banner-area/mini-banner-area.com
 import { BigBannerAreaComponent } from './big-banner-area/big-banner-area.component';
 import { MakeCallAreaComponent } from './make-call-area/make-call-area.component';
 import { ShippingAreaComponent } from './shipping-area/shipping-area.component';
+import { NewsletterComponent } from '../components/newsletter/newsletter.component';
 
 @NgModule({
   imports: [CommonModule, HomeRoutingModule],
@@ -16,6 +17,7 @@ import { ShippingAreaComponent } from './shipping-area/shipping-area.component';
     BigBannerAreaComponent,
     MakeCallAreaComponent,
     ShippingAreaComponent,
+    NewsletterComponent,
   ],
 })
 export class HomeModule {}
