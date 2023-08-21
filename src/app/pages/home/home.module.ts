@@ -8,6 +8,7 @@ import { BigBannerAreaComponent } from './big-banner-area/big-banner-area.compon
 import { MakeCallAreaComponent } from './make-call-area/make-call-area.component';
 import { ShippingAreaComponent } from './shipping-area/shipping-area.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { AdAreaComponent } from './ad-area/ad-area.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
     BigBannerAreaComponent,
     MakeCallAreaComponent,
     ShippingAreaComponent,
+    AdAreaComponent,
   ],
   imports: [CommonModule, HomeRoutingModule, SharedModule],
 })
