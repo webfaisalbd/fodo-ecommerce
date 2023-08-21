@@ -1,13 +1,32 @@
-.banner-area {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+.container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    max-width: 1320px;
+    margin: auto;
+
+    @media only screen and (min-width: 1400px) {
+        max-width: 1140px;
+    }
+
+    @media only screen and (max-width: 1200px) {
+        max-width: 960px;
+    }
+
+    @media only screen and (max-width: 992px) {
+        max-width: 720px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        max-width: 540px;
+    }
 }
 
 .row {
     display: flex;
-    gap: 10px;
-    justify-content: center; 
+    gap: 20px;
+    justify-content: center;
 }
+
 
 .banner-area .banner-box {
     width: 100%;
@@ -16,6 +35,7 @@
     border-radius: 8px;
     position: relative;
 }
+
 
 .banner-area .banner-box a {
     width: 100%;
