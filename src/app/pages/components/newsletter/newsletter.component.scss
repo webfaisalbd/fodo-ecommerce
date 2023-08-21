@@ -1,19 +1,16 @@
 .subscripion-area {
-    background-color: var(--color-99);
-    padding: 50px 0px;
+  background-color: var(--color-99);
+  padding: 50px 0px;
 }
 
 .container {
-  padding-top: 20px;
-  padding-bottom: 20px;
   max-width: 1320px;
   margin: auto;
-
 
   @media only screen and (max-width: 1400px) {
     max-width: 1140px;
   }
-  
+
   @media only screen and (max-width: 1200px) {
     max-width: 960px;
   }
@@ -28,85 +25,80 @@
 }
 
 .row {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
-
 
 .flexDiv {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-
 .subscripion-area span i {
-    font-size: 3.5rem;
-    color: var(--primary-color);
+  font-size: 3.5rem;
+  color: var(--primary-color);
 }
 
 .subscripion-area h4 {
-    color: var(--color-white);
-    font-size: var(--size-xl);
-    font-weight: var(--text-bold);
+  color: var(--color-white);
+  font-size: var(--size-xl);
+  font-weight: var(--text-bold);
 }
 
 .subscripion-area p {
-    color: #CACACA;
-    font-size: var(--size-md);
+  color: #cacaca;
+  font-size: var(--size-md);
 }
 
 .subscripion-area form {
-    margin: 15px;
-    // border: 1px solid yellow;
+  margin: 15px;
 }
 
 .subscripion-area form input {
-    width: 300px;
-    padding: 20px;
-    color: #6F6F6F;
-    font-size: var(--size-md);
-    font-weight: var(--text-bold);
-    border: none;
-    box-shadow: none;
-    background-color: #16122C;
+  width: 300px;
+  padding: 20px;
+  color: #6f6f6f;
+  font-size: var(--size-md);
+  font-weight: var(--text-bold);
+  border: none;
+  box-shadow: none;
+  background-color: #16122c;
 }
 
 .subscripion-area form input:focus {
-    border: none;
-    box-shadow: none;
-    background-color: #16122C;
+  border: none;
+  box-shadow: none;
+  background-color: #16122c;
 }
 
 .subscripion-area form ::placeholder {
-    color: #6F6F6F;
-    text-transform: uppercase;
-    font-weight: var(--text-bold);
+  color: #6f6f6f;
+  text-transform: uppercase;
+  font-weight: var(--text-bold);
 }
 
 .subscripion-area form button {
-    padding: 20px;
-    border: 1px solid var(--primary-color);
-    box-shadow: none;
-    background-color: var(--primary-color);
-    text-transform: uppercase;
+  padding: 20px;
+  border: 1px solid var(--primary-color);
+  box-shadow: none;
+  background-color: var(--primary-color);
+  text-transform: uppercase;
 }
 
 .subscripion-area form button:hover {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
-
-
-@media (max-width: 1200px){
-    .row {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-    }
-    .subscripion-area form input {
-        max-width: 450px;
-    }
+@media (max-width: 1200px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .subscripion-area form input {
+    max-width: 450px;
+  }
 }
