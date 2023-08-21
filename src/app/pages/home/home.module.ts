@@ -7,6 +7,7 @@ import { MiniBannerAreaComponent } from './mini-banner-area/mini-banner-area.com
 import { BigBannerAreaComponent } from './big-banner-area/big-banner-area.component';
 import { MakeCallAreaComponent } from './make-call-area/make-call-area.component';
 import { ShippingAreaComponent } from './shipping-area/shipping-area.component';
+import { NewsletterComponent } from '../components/newsletter/newsletter.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { AdAreaComponent } from './ad-area/ad-area.component';
 
@@ -17,6 +18,7 @@ import { AdAreaComponent } from './ad-area/ad-area.component';
     BigBannerAreaComponent,
     MakeCallAreaComponent,
     ShippingAreaComponent,
+    NewsletterComponent,
     AdAreaComponent,
   ],
   imports: [CommonModule, HomeRoutingModule, SharedModule],
