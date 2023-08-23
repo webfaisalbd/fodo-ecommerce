@@ -6,6 +6,7 @@
 .container {
   max-width: 1320px;
   margin: auto;
+  padding: 0 20px;
 
   @media only screen and (max-width: 1400px) {
     max-width: 1140px;
@@ -85,6 +86,7 @@
   box-shadow: none;
   background-color: var(--primary-color);
   text-transform: uppercase;
+  color: var(--color-white);
 }
 
 .subscripion-area form button:hover {
@@ -92,6 +94,8 @@
   border-color: var(--primary-color);
 }
 
+
+// make responsive 
 @media (max-width: 1200px) {
   .row {
     display: flex;
@@ -100,5 +104,19 @@
   }
   .subscripion-area form input {
     max-width: 450px;
+  }
+}
+
+@media (max-width: 520px) {
+  .container {
+    padding: 0 1rem;
+  }
+  .subscripion-area form input {
+    width: 190px;
+    font-size: 12px;
+  }
+  .subscripion-area form button {
+    font-size: 12px;
+    padding: 20px 5px;
   }
 }

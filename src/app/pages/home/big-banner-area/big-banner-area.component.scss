@@ -1,11 +1,13 @@
 .container {
-  padding: 40px 16px;
+  padding: 40px 0px;
   max-width: 1290px;
   margin: auto;
   // border: 2px solid blue;
-
+  
   @media only screen and (max-width: 1400px) {
     max-width: 1140px;
+    // this (padding: 40px 16px;) is needed for adjust width rest of the content, and use only below 1400px. and use (padding: 40px 0px;) for above 1400px.
+    padding: 40px 16px;
   }
 
   @media only screen and (max-width: 1200px) {

@@ -6,6 +6,7 @@
 .container {
   max-width: 1320px;
   margin: auto;
+  padding: 0 20px;
 
   @media only screen and (max-width: 1400px) {
     max-width: 1140px;
@@ -36,6 +37,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.make-call-item a {
+  text-decoration: none;
+  color: white;
 }
 
 .make-call-box h4 {
