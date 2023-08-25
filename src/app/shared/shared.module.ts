@@ -4,6 +4,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ProductCardComponent } from './components/lazy-components/product-card/product-card.component';
 import { ProductBarComponent } from './components/lazy-components/product-bar/product-bar.component';
+import { NewsletterComponent } from './components/newsletter/newsletter.component';
 
 @NgModule({
   declarations: [
@@ -11,6 +12,7 @@ import { ProductBarComponent } from './components/lazy-components/product-bar/pr
     FooterComponent,
     ProductCardComponent,
     ProductBarComponent,
+    NewsletterComponent,
   ],
   imports: [CommonModule],
   exports: [
@@ -18,6 +20,7 @@ import { ProductBarComponent } from './components/lazy-components/product-bar/pr
     FooterComponent,
     ProductCardComponent,
     ProductBarComponent,
+    NewsletterComponent,
   ],
 })
 export class SharedModule {}

@@ -1,0 +1,39 @@
+.cart-container {
+  padding: 40px 10px;
+  max-width: 1320px;
+  margin: auto;
+  display: grid;
+  grid-row: auto;
+  grid-template-rows: repeat(1, 1fr);
+
+  @media only screen and (max-width: 1400px) {
+    max-width: 1140px;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    max-width: 960px;
+  }
+
+  @media only screen and (max-width: 992px) {
+    max-width: 720px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    max-width: 540px;
+  }
+
+  .cart-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-top: 30px;
+
+    @media only screen and (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

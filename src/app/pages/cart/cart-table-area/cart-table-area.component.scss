@@ -1,0 +1,121 @@
+.table {
+  text-align: center;
+  border: 1px solid #cacaca;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1rem;
+
+  th {
+    color: var(--color-white);
+    font-size: var(--size-md);
+    text-transform: uppercase;
+    font-weight: var(--text-bold);
+    padding: 20px 0px;
+    background-color: var(--primary-color);
+    border: 1px solid #cacaca;
+    border-collapse: collapse;
+  }
+
+  .product-thumbnail {
+    width: 120px;
+    height: 120px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .product-name {
+    font-weight: var(--text-bold);
+  }
+
+  td {
+    font-size: var(--size-md);
+    text-align: center;
+    color: var(--secondary-color);
+    vertical-align: middle;
+    padding: 0px 5px;
+    border: 1px solid #cacaca;
+    border-collapse: collapse;
+
+    .quantity-area {
+      display: flex;
+      justify-content: center;
+
+      .quantity-container {
+        display: flex;
+
+        .quantity-button {
+          font-size: var(--size-lg);
+          border: none;
+          background-color: var(--primary-color);
+          color: var(--color-white);
+          padding: 5px 6px;
+          cursor: pointer;
+        }
+
+        input {
+          background-color: var(--color-white);
+          width: 80px;
+          height: 45px;
+          padding: 8px 10px;
+          text-align: center;
+          border: 1px solid var(--primary-color);
+          font-size: var(--size-md);
+          color: var(--secondary-color);
+        }
+      }
+    }
+
+    .delete-btn {
+      color: var(--secondary-color);
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+
+      i {
+        font-size: 1.25rem;
+      }
+
+      &:hover {
+        i {
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+}
+
+.table-middle-area {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  margin-top: 30px;
+
+  @media only screen and (max-width: 576px) {
+    flex-direction: column;
+  }
+
+  .my-btn {
+    font-size: var(--size-md);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    border-radius: 0px !important;
+    display: block;
+    border: 1px solid var(--primary-color);
+    font-weight: var(--text-normal);
+    color: var(--color-white);
+    padding: 14px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    width: fit-content;
+
+    &:hover {
+      background-color: var(--color-99);
+      color: var(--color-white);
+      transition: 0.6s;
+    }
+  }
+}
