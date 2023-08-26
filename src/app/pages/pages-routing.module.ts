@@ -29,6 +29,11 @@ const routes: Routes = [
         loadChildren: () =>
           import('./checkout/checkout.module').then((m) => m.CheckoutModule),
       },
+      {
+        path: 'auth',
+        loadChildren: () =>
+          import('./auth/auth.module').then((m) => m.AuthModule),
+      },
     ],
   },
 ];
