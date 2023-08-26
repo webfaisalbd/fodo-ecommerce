@@ -15,15 +15,12 @@
 
   @media only screen and (max-width: 992px) {
     max-width: 720px;
+    flex-direction: column;
+    gap: 35px;
   }
 
   @media only screen and (max-width: 768px) {
     max-width: 540px;
-  }
-
-  @media only screen and (max-width: 992px) {
-    flex-direction: column;
-    gap: 35px;
   }
 
   .card-area-title {

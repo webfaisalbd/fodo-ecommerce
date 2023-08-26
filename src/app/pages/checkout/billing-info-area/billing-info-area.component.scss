@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.billing-container {
+  .billing-info {
+    padding: 20px 20px;
+    border: 1px solid #cacaca;
+    background-color: var(--color-white);
+
+    h4 {
+      border-bottom: 1px solid #cacaca;
+      padding-bottom: 15px;
+      font-size: 1.3rem;
+    }
+
+    .form-area {
+      margin-top: 30px;
+
+      form {
+        .row-top {
+          display: flex;
+          flex-wrap: wrap;
+
+          @media only screen and (max-width: 768px) {
+            flex-direction: column;
+          }
+
+          .row-item {
+            width: 50%;
+            margin-bottom: 1rem;
+
+            @media only screen and (max-width: 768px) {
+              width: 100%;
+            }
+
+            .form-field {
+              display: flex;
+              flex-direction: column;
+
+              label {
+                font-size: var(--size-md);
+                color: var(--secondary-color);
+                opacity: 0.7;
+                margin-bottom: 0.5rem;
+              }
+
+              input {
+                font-size: var(--size-md);
+                color: var(--secondary-color);
+                padding: 10px 10px;
+                width: 100%;
+                font-size: 1rem;
+                font-weight: var(--text-normal);
+                line-height: 1.5;
+                color: #212529;
+                border: 1px solid #dee2e6;
+
+                &:focus {
+                  outline-color: var(--primary-color);
+                  border-color: var(--primary-color);
+                  box-shadow: none;
+                }
+              }
+
+              select {
+                padding: 10px 10px;
+                opacity: 0.7;
+                font-size: var(--size-md);
+                color: var(--secondary-color);
+                padding: 10px 10px;
+                width: 100%;
+                font-size: 1rem;
+                font-weight: var(--text-normal);
+                line-height: 1.5;
+                color: #212529;
+                border: 1px solid #dee2e6;
+
+                &:focus {
+                  outline-color: var(--primary-color);
+                  border-color: var(--primary-color);
+                  box-shadow: none;
+                }
+
+                option {
+                  font-size: var(--size-md);
+                  color: var(--secondary-color);
+                }
+              }
+
+              textarea {
+                &:focus {
+                  outline-color: var(--primary-color);
+                  border-color: var(--primary-color);
+                  box-shadow: none;
+                }
+              }
+
+              .form-check-input {
+                padding: 0 !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
