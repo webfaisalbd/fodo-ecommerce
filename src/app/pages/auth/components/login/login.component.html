@@ -1,1 +1,53 @@
-<p>login works!</p>
+<div class="login-section pt-80 pb-40">
+    <div class="container">
+        <div class="login-box">
+            <div class="login-item d-flex justify-content-center align-items-center w-100 h-100">
+                <div class="login-form-body">
+                    <div class="mb-4">
+                        <div class="logo">
+                            <img src="assets/images/logo.png" class="img-fluid" alt="logo">
+                        </div>
+                    </div>
+                    <div class="mb-3 text-center">
+                        <p>Please Login, or <a href="registration.html"
+                                style="color: var(--primary-color);">Registration</a></p>
+                    </div>
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control inputClass" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Enter password</label>
+                            <div class="input-group">
+                                <input type="password" class="form-control inputClass" id="password" required>
+                                <div class="input-group-append">
+                                    <span class="password-show-icon" onclick="togglePassword()">
+                                        <i id="password-show-icon" class="bi bi-eye"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-flex-justify-content-between">
+                                <a href="registration.html" class="d-block">Create an Account</a>
+                                <a href="#" class="d-block">Forgot Password?</a>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-check mt-2">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Remember me
+                                </label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <button type="submit" class="my-btn">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
