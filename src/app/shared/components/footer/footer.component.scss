@@ -43,6 +43,12 @@ a {
   margin-left: 1rem;
 }
 
+.footer-middle-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 h4 {
   color: white;
   padding-bottom: 25px;
@@ -154,7 +160,7 @@ i {
 // main footer footer bottom section
 .main-footer > .footer-bottom {
   border-top: 1px solid #6f6f6f;
-  
+  margin-top: 40px;
 }
 
 .main-footer > .footer-bottom .footer-bottom-wrapper {
@@ -216,7 +222,6 @@ i {
     justify-content: flex-start;
     // background: yellow;
   }
-
 }
 
 @media (max-width: 576px) {

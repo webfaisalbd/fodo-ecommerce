@@ -1,3 +1,8 @@
+<!-- Breadcumb Area Start -->
+<app-product-details-breadcrumb></app-product-details-breadcrumb>
+<!-- Breadcumb Area Start -->
+
+<!-- Tabs Area Start -->
 <div class="container">
     <div class="tab-container">
         <ul class="nav-tabs">
@@ -12,6 +17,22 @@
             </li>
         </ul>
     </div>
-    <ng-container *ngComponentOutlet="activatedProductTab"></ng-container>
 </div>
-<!-- <app-product-card></app-product-card> -->
+<!-- Tabs Area End -->
+
+<!-- popular product card area start -->
+<div class="card-heading-area-container">
+    <div class="card-area-title">
+        <h3>Popular Products</h3>
+    </div>
+    <div class="view-all-button-container">
+        <a href="#" class="view-all-btn">
+            View All
+            <span>
+                <i class="bi bi-arrow-right"></i>
+            </span>
+        </a>
+    </div>
+</div>
+<app-product-card></app-product-card>
+<!-- popular product card area end -->

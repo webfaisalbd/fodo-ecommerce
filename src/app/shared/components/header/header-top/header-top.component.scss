@@ -1,67 +1,67 @@
-//  header-top start  
-
+//  header-top start
 
 a {
-    text-decoration: none;
-    color: var(--color-white);
-    font-size: var(--size-md);
-    font-weight: var(--text-normal);
-  }
-  
-  li {
-    list-style: none;
-  }
-  
-  .header-top {
-    padding: 1rem 3rem;
-    background-color: var(--color-99);
-  }
-  
-  .header-box {
-    display: flex;
-    justify-content: space-between;
-    
-    
-    .info-box {
-      
-      .info-items {
-        display: flex;
-        gap: 2rem;
-        
-        i {
-          color: greenyellow;
-        }
-        
-        span {
-          padding-left: .5rem;
-        }
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: var(--size-md);
+  font-weight: var(--text-normal);
+}
+
+li {
+  list-style: none;
+}
+
+.header-top {
+  padding: 12px 60px;
+  background-color: var(--color-99);
+}
+
+.header-box {
+  display: flex;
+  justify-content: space-between;
+
+  .info-box {
+    .info-items {
+      display: flex;
+      gap: 0.75rem;
+
+      i {
+        color: greenyellow;
+      }
+
+      span {
+        padding-left: 0.5rem;
       }
     }
-    
-    
-  
-    .socials-box {
-      display: flex;
-      gap: 1rem;
-      
-      .language {
-        padding-left: 1rem;
-        cursor: pointer;
-        position: relative;
-        
+  }
+
+  .socials-box {
+    display: flex;
+    gap: 1.25rem;
+
+    .language {
+      padding-left: 1rem;
+      cursor: pointer;
+      position: relative;
+
+      .current-lang {
+        display: flex;
+        gap: 4px;
+
         .text {
           color: var(--color-white);
+          font-size: 15px;
         }
-        
+
         .icon {
           color: greenyellow;
         }
       }
-      
-      .language .dropdown-menu {
+
+      .dropdown-menu {
         display: none;
       }
-  
+
       .language:hover .dropdown-menu {
         display: block;
         position: absolute;
@@ -69,40 +69,33 @@ a {
         right: 0%;
         width: 140%;
         background: var(--color-white);
-        
+
         li {
-          padding: .5rem;
-          
+          padding: 0.5rem;
+
           a {
             color: black;
           }
-          
+
           a:hover {
             color: green;
           }
         }
-        
-      }
-  
-  
-    }
-  
-  }
-  
-  
-  @media only screen and (max-width: 778px) {
-    .header-top {
-      padding: 1rem 1rem;
-    }
-  
-    .header-box {
-      .socials-box {
-        display: none;
       }
     }
-  
   }
-  
-  //  header-top end  
-  
-  
+}
+
+@media only screen and (max-width: 768px) {
+  .header-top {
+    padding: 1rem 1rem;
+  }
+
+  .header-box {
+    .socials-box {
+      display: none;
+    }
+  }
+}
+
+//  header-top end
