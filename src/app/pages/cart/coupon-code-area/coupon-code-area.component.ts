@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'coupon-code-area',
+  selector: 'app-coupon-code-area',
   templateUrl: './coupon-code-area.component.html',
   styleUrls: ['./coupon-code-area.component.scss'],
 })

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'cart-breadcrumb-area',
+  selector: 'app-cart-breadcrumb-area',
   templateUrl: './cart-breadcrumb-area.component.html',
   styleUrls: ['./cart-breadcrumb-area.component.scss'],
 })
