@@ -2,11 +2,7 @@
   <div class="product-area">
     <div class="card-section">
       <!-- Single -->
-      <div
-        class="product-item"
-        *ngFor="let product of products"
-        [routerLink]="['details']"
-      >
+      <div class="product-item" *ngFor="let product of products" [routerLink]="['details']">
         <div class="sale-badge">
           <span>Sale</span>
         </div>
@@ -19,13 +15,8 @@
           </div>
           <a class="wishlist"><i class="bi bi-heart"></i></a>
           <div>
-            <a
-              class="product-QuickView"
-              href="#"
-              data-bs-toggle="modal"
-              data-bs-target="#quickViewModal"
-              ><i class="bi bi-eye"></i
-            ></a>
+            <a class="product-QuickView" href="#" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
+                class="bi bi-eye"></i></a>
           </div>
           <div class="add-to-cart-area">
             <a href="#" class="add-to-cart">Add to Cart</a>
@@ -43,8 +34,8 @@
             <a>{{ product.title }}</a>
           </div>
           <div class="pricing">
-            <span>{{ product.newPrice }}</span>
-            <del>{{ product.oldPrice }}</del>
+            <span>${{ product.newPrice }}</span>
+            <del>${{ product.oldPrice }}</del>
           </div>
         </div>
       </div>

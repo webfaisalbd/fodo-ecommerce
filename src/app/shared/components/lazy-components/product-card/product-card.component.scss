@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 .container {
-  padding-bottom: 0 0 40px 0;
+  padding-bottom: 40px;
   max-width: 1320px;
   margin: auto;
 
@@ -19,6 +19,7 @@
 
   @media only screen and (max-width: 768px) {
     max-width: 540px;
+    padding: 0 10px 40px 10px;
   }
 
   .product-area {
