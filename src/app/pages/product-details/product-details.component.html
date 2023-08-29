@@ -2,37 +2,43 @@
 <app-product-details-breadcrumb></app-product-details-breadcrumb>
 <!-- Breadcumb Area Start -->
 
-<!-- Tabs Area Start -->
+<!-- Details Box Area Start -->
 <div class="container">
-    <div class="tab-container">
-        <ul class="nav-tabs">
-            <li class="nav-item">
-                <button class="nav-link" routerLinkActive="active">Description</button>
-            </li>
-            <li class="nav-item">
-                <button class="nav-link" routerLinkActive="active">Additional Information</button>
-            </li>
-            <li class="nav-item">
-                <button class="nav-link" routerLinkActive="active">Reviews</button>
-            </li>
-        </ul>
-    </div>
-</div>
-<!-- Tabs Area End -->
+  <app-product-details-box></app-product-details-box>
+  <!-- Details Box Area End -->
 
-<!-- popular product card area start -->
-<div class="card-heading-area-container">
-    <div class="card-area-title">
-        <h3>Popular Products</h3>
+  <!-- Tabs Area Start -->
+  <div class="tab-container">
+    <div class="tab-area">
+      <ul class="nav-tabs">
+        <li class="nav-item">
+          <button class="nav-link" routerLinkActive="active">
+            Description
+          </button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" routerLinkActive="active">
+            Additional Information
+          </button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" routerLinkActive="active">Reviews</button>
+        </li>
+      </ul>
     </div>
+  </div>
+  <!-- Tabs Area End -->
+
+  <!-- popular product card area start -->
+  <div class="card-area-title">
+    <h3>Popular Products</h3>
     <div class="view-all-button-container">
-        <a href="#" class="view-all-btn">
-            View All
-            <span>
-                <i class="bi bi-arrow-right"></i>
-            </span>
-        </a>
+      <a href="#" class="view-all-btn"
+        >View All<span><i class="bi bi-arrow-right"></i> </span>
+      </a>
     </div>
+  </div>
+
+  <app-product-card></app-product-card>
+  <!-- popular product card area end -->
 </div>
-<app-product-card></app-product-card>
-<!-- popular product card area end -->

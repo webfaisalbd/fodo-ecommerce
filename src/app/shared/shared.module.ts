@@ -6,6 +6,7 @@ import { ProductCardComponent } from './components/lazy-components/product-card/
 import { ProductBarComponent } from './components/lazy-components/product-bar/product-bar.component';
 import { NewsletterComponent } from './components/newsletter/newsletter.component';
 import { HeaderTopComponent } from './components/header/header-top/header-top.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { HeaderTopComponent } from './components/header/header-top/header-top.co
     NewsletterComponent,
     HeaderTopComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   exports: [
     HeaderComponent,
     FooterComponent,
