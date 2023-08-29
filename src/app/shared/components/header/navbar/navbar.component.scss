@@ -1,0 +1,99 @@
+.desktop-navigation {
+    padding: 2rem 3rem;
+    background: white;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    // border: 1px solid blue;
+
+    .logo_menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 600px;
+        // background: red;
+
+        .menu-list {
+            display: flex;
+
+            li {
+                padding: 0 1rem;
+            }
+        }
+    
+        
+    }
+
+    .icons-container {
+        display: flex;
+        // background: green;
+
+        .icons-list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            // border: 1px solid red;
+            
+            li {
+                padding: 0.625rem;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                position: relative;
+            }
+
+            .hamburger {
+                display: none;
+            }
+
+            .icon-value {
+                position: absolute;
+                top: -10px;
+                right: -10px;
+                color: white;
+                background: rgb(92, 140, 19);
+                padding: 2px 7px;
+                border-radius: 25px;
+            }
+
+        }
+    }
+}
+
+
+// responsiveNess 
+@media screen and (max-width: 990px) {
+    nav {
+
+        .logo_menu {
+            display: none;
+            background: red;
+        }
+        .icons-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .icons-list {
+                .hamburger {
+                    display: block;
+                }
+            }
+        }
+    }
+  }
+
+
+

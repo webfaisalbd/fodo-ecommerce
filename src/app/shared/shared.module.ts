@@ -6,6 +6,7 @@ import { ProductCardComponent } from './components/lazy-components/product-card/
 import { ProductBarComponent } from './components/lazy-components/product-bar/product-bar.component';
 import { NewsletterComponent } from './components/newsletter/newsletter.component';
 import { HeaderTopComponent } from './components/header/header-top/header-top.component';
+import { NavbarComponent } from './components/header/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { HeaderTopComponent } from './components/header/header-top/header-top.co
     ProductBarComponent,
     NewsletterComponent,
     HeaderTopComponent,
+    NavbarComponent,
   ],
   imports: [CommonModule],
   exports: [
