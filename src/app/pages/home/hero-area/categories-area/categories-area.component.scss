@@ -1,0 +1,116 @@
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    border-bottom: 1px solid lightgray;
+}
+
+.category-menu-area .list-group-item.active {
+    background-color: var(--primary-color);
+    color: var(--color-white);
+    text-transform: uppercase;
+    border: none;
+    font-size: var(--size-md);
+    font-weight: var(--text-bold);
+}
+
+.category-menu-area {
+    background: var(--color-white);
+}
+
+.category-menu-area ul li a {
+    font-size: var(--size-md);
+    color: var(--secondary-color);
+}
+
+.category-menu-area ul li {
+    cursor: pointer;
+    padding: 10px 10px 10px 12px;
+}
+
+.category-menu-area ul li a:hover {
+    color: var(--primary-color);
+    transition: .6s;
+}
+
+.category-menu-area .category-menu .d-flex-justify-content-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.category-menu-area .category-menu {
+    position: relative;
+}
+
+.category-menu-area .category-menu .sub-menu1 {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    border-left: 2px solid var(--primary-color);
+}
+
+
+.category-menu-area .category-menu .sub-menu1 .menu-item {
+    width: 250px;
+    padding-left: 20px;
+    border-bottom: 1px solid #E0E4E0;
+}
+
+.category-menu-area .category-menu .sub-menu1 {
+    visibility: hidden;
+    background-color: var(--color-white);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 999;
+}
+
+.category-menu-area .category-menu:hover .sub-menu1 {
+    visibility: visible;
+    animation: slide-left .6s ease;
+}
+
+.category-menu-area .four-column-list {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(160px, 1fr));
+    gap: 0px;
+    list-style: none;
+    padding: 0px 5px 15px 0px;
+}
+
+.category-menu-area .four-column-list ul .heading {
+    border-bottom: 1px solid #E0E4E0;
+    font-size: var(--size-md);
+    color: var(--secondary-color);
+    font-weight: var(--text-bold);
+}
+
+.category-menu-area .four-column-list ul li {
+    text-align: left;
+    padding: 10px 20px 10px 20px;
+    background-color: transparent;
+}
+
+.category-menu-area .four-column-list ul li a:hover {
+    color: var(--primary-color);
+    transition: .6s;
+}
+
+.category-menu-area .category-menu .sub-menu2 {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    visibility: hidden;
+    border-left: 2px solid var(--primary-color);
+    background-color: var(--color-white);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 999;
+}
+
+.category-menu-area .category-menu .sub-menu1 .menu-item:hover .sub-menu2 {
+    visibility: visible;
+    animation: slide-left .6s ease;
+}

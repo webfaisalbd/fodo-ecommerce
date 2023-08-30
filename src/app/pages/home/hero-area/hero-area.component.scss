@@ -1,0 +1,62 @@
+.container {
+  padding: 40px 0px;
+  max-width: 1290px;
+  margin: auto;
+  // border: 2px solid blue;
+
+  @media only screen and (max-width: 1400px) {
+    max-width: 1140px;
+    // this (padding: 40px 16px;) is needed for adjust width rest of the content, and use only below 1400px. and use (padding: 40px 0px;) for above 1400px.
+    padding: 40px 16px;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    max-width: 960px;
+  }
+
+  @media only screen and (max-width: 992px) {
+    max-width: 720px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    max-width: 540px;
+  }
+}
+
+.category-sliding-container {
+
+  display: flex;
+  gap: 1.625rem;
+
+  .category-area {
+    display: flex;
+    flex-basis: 25%;
+
+    .category-box {
+      width: 100%;
+      // border: 3px solid red;
+    }
+  }
+
+  .sliding-area {
+    display: flex;
+    flex-basis: 75%;
+
+    .sliding-box {
+      width: 100%;
+    }
+  }
+
+}
+
+@media (max-width: 990px) {
+  .category-sliding-container {
+    .category-area {
+      display: none;
+    }
+    .sliding-area {
+      display: flex;
+      flex-basis: 100%;
+    }
+  }
+}

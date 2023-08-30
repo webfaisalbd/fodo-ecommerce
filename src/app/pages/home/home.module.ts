@@ -10,6 +10,9 @@ import { ShippingAreaComponent } from './shipping-area/shipping-area.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { AdAreaComponent } from './ad-area/ad-area.component';
 import { BlogAreaComponent } from './blog-area/blog-area.component';
+import { HeroAreaComponent } from './hero-area/hero-area.component';
+import { CategoriesAreaComponent } from './hero-area/categories-area/categories-area.component';
+import { SlidingAreaComponent } from './hero-area/sliding-area/sliding-area.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +23,9 @@ import { BlogAreaComponent } from './blog-area/blog-area.component';
     ShippingAreaComponent,
     AdAreaComponent,
     BlogAreaComponent,
+    HeroAreaComponent,
+    CategoriesAreaComponent,
+    SlidingAreaComponent,
   ],
   imports: [CommonModule, HomeRoutingModule, SharedModule],
 })
