@@ -1,0 +1,18 @@
+.table-container {
+  padding: 1.25rem 0.5rem 0 0.5rem;
+
+  .table {
+    border: 1px solid #cacaca;
+    border-collapse: collapse;
+    width: 100%;
+
+    td {
+      color: var(--secondary-color);
+      font-size: var(--size-md);
+      font-weight: var(--text-normal);
+      border: 1px solid #cacaca;
+      border-collapse: collapse;
+      padding: 0.5rem;
+    }
+  }
+}

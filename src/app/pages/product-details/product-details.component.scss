@@ -34,20 +34,21 @@
         flex-wrap: wrap;
         border-bottom: 1px solid #dee2e6;
         border-radius: 0.375rem;
-        padding: 0.5rem 1rem;
 
-        .nav-link {
-          border: none;
-          color: var(--seconary-color);
-          font-size: var(--size-md);
-          font-weight: var(--text-bold);
-          padding: 0.5rem 1rem;
-          background-color: var(--color-white);
-          cursor: pointer;
-        }
+        .nav-item {
+          .nav-link {
+            border: none;
+            color: var(--seconary-color);
+            font-size: var(--size-md);
+            font-weight: var(--text-bold);
+            padding: 1.25rem 1rem;
+            background-color: var(--color-white);
+            cursor: pointer;
 
-        .active {
-          border-bottom: 2px solid var(--primary-color);
+            &:active {
+              border-bottom: 2px solid var(--primary-color);
+            }
+          }
         }
       }
     }

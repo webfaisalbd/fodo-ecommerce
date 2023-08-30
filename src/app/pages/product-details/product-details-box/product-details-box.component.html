@@ -7,35 +7,14 @@
             <img src="assets/images/product/vegetable.png" alt="product-img" />
           </a>
         </div>
-        <div class="sliding-section" id="product-quickView-mini">
-          <div class="sliding-img">
-            <div class="img-box">
-              <a class="product-quickView" href="assets/images/shopping-cart/1.png">
-                <img src="assets/images/shopping-cart/1.png" class="img-fluid" alt="" />
-              </a>
-            </div>
-          </div>
-          <div class="sliding-img">
-            <div class="img-box">
-              <a class="product-quickView" href="assets/images/shopping-cart/2.png">
-                <img src="assets/images/shopping-cart/2.png" class="img-fluid" alt="" />
-              </a>
-            </div>
-          </div>
-          <div class="sliding-img">
-            <div class="img-box">
-              <a class="product-quickView" href="assets/images/shopping-cart/2.png">
-                <img src="assets/images/shopping-cart/2.png" class="img-fluid" alt="" />
-              </a>
-            </div>
-          </div>
-          <div class="sliding-img">
-            <div class="img-box">
-              <a class="product-quickView" href="assets/images/shopping-cart/1.png">
-                <img src="assets/images/shopping-cart/1.png" class="img-fluid" alt="" />
-              </a>
-            </div>
-          </div>
+        <div class="sliding-section">
+          <p-carousel [value]="images" [circular]="true" [numVisible]="4" [autoplayInterval]="3000">
+            <ng-template let-images pTemplate="item">
+              <div class="img-box">
+                <img [src]="images.src" [alt]="images.alt">
+              </div>
+            </ng-template>
+          </p-carousel>
         </div>
       </div>
       <div class="right-area">
@@ -66,7 +45,7 @@
           <del>$210</del>
         </div>
         <div class="categories">
-          <span>Categories :</span>
+          <span>Categories: </span>
           <a>Cover</a>
           <a>Seat</a>
           <a>Car</a>
@@ -74,10 +53,10 @@
         </div>
         <div class="color">
           <div>
-            <span>Color :</span>
+            <span>Color: </span>
           </div>
           <div class="colors">
-            <a class="red active"></a>
+            <a class="red"></a>
             <a class="blue"></a>
             <a class="yelllow"></a>
             <a class="green"></a>
@@ -85,7 +64,7 @@
           </div>
         </div>
         <div class="size">
-          <span>Size :</span>
+          <span>Size: </span>
           <a href="#">Small</a>
           <a href="#">Medium</a>
           <a href="#">Large</a>
@@ -110,7 +89,7 @@
           </div>
         </div>
         <div class="quick-social-share">
-          <span class="fw-bold">Share :</span>
+          <span class="fw-bold">Share: </span>
           <a href="#"><i class="bi bi-facebook"></i></a>
           <a href="#"><i class="bi bi-twitter"></i></a>
           <a href="#"><i class="bi bi-pinterest"></i></a>

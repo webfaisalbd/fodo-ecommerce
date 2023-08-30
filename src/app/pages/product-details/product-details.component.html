@@ -12,29 +12,29 @@
     <div class="tab-area">
       <ul class="nav-tabs">
         <li class="nav-item">
-          <button class="nav-link" routerLinkActive="active">
+          <button class="nav-link" (click)="assignTabSectionComponent('description')">
             Description
           </button>
         </li>
         <li class="nav-item">
-          <button class="nav-link" routerLinkActive="active">
+          <button class="nav-link" (click)="assignTabSectionComponent('additional-info')">
             Additional Information
           </button>
         </li>
         <li class="nav-item">
-          <button class="nav-link" routerLinkActive="active">Reviews</button>
+          <button class="nav-link" (click)="assignTabSectionComponent('review-area')">Reviews</button>
         </li>
       </ul>
+      <ng-container class="tab-content" *ngComponentOutlet="detailsTabSection"></ng-container>
     </div>
   </div>
   <!-- Tabs Area End -->
 
   <!-- popular product card area start -->
   <div class="card-area-title">
-    <h3>Popular Products</h3>
+    <h3>Related Products</h3>
     <div class="view-all-button-container">
-      <a href="#" class="view-all-btn"
-        >View All<span><i class="bi bi-arrow-right"></i> </span>
+      <a href="#" class="view-all-btn">View All<span><i class="bi bi-arrow-right"></i> </span>
       </a>
     </div>
   </div>
