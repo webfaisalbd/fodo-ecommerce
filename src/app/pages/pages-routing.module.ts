@@ -30,6 +30,11 @@ const routes: Routes = [
           import('./checkout/checkout.module').then((m) => m.CheckoutModule),
       },
       {
+        path: 'wishlist',
+        loadChildren: () =>
+          import('./wishlist/wishlist.module').then((m) => m.WishlistModule),
+      },
+      {
         path: 'auth',
         loadChildren: () =>
           import('./auth/auth.module').then((m) => m.AuthModule),
