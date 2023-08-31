@@ -1,6 +1,6 @@
 // Tabs Area Start
 .bars-ad-container {
-  padding: 40px 16px;
+  padding: 40px 0;
   max-width: 1320px;
   margin: auto;
 
@@ -31,6 +31,7 @@
 
     @media only screen and (max-width: 576px) {
       grid-template-columns: repeat(1, 1fr);
+      padding: 40px 16px;
     }
   }
 }
@@ -40,7 +41,7 @@
 .card-heading-area-container {
   display: flex;
   justify-content: space-between;
-  padding: 40px 16px 0 16px;
+  padding-top: 40px;
   max-width: 1320px;
   margin: auto;
 
@@ -60,6 +61,7 @@
 
   @media only screen and (max-width: 768px) {
     max-width: 540px;
+    padding: 40px 16px;
   }
 
   .card-area-title {
