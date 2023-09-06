@@ -60,12 +60,41 @@
 <!-- Search Sidebar start -->
 <div class="card flex justify-content-center">
   <p-sidebar [(visible)]="searchSidebarVisible" position="right">
-    <h3>Sidebar</h3>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua.
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
+    <h3>Search</h3>
+    <div class="offcanvas-body">
+      <form class="d-flex" role="search">
+        <input class="form-control" type="search" placeholder="Search here..." aria-label="Search">
+        <button class="btn btn-success" type="submit"><i class="bi bi-search"></i></button>
+      </form>
+      <div>
+        <h6 class="fw-bold mt-15">Recent Searchs</h6>
+        <div class="search-tag">
+          <a href="#">Food</a>
+          <a href="#">Grocery</a>
+          <a href="#">Junk</a>
+          <a href="#">Orange</a>
+          <a href="#">Health</a>
+          <a href="#">Shopping</a>
+          <a href="#">Keyboard</a>
+          <a href="#">Mouse</a>
+          <a href="#">Health</a>
+        </div>
+      </div>
+      <div>
+        <h6 class="fw-bold mt-15">Popular Searchs</h6>
+        <div class="search-tag">
+          <a href="#">Food</a>
+          <a href="#">Grocery</a>
+          <a href="#">Junk</a>
+          <a href="#">Orange</a>
+          <a href="#">Health</a>
+          <a href="#">Shopping</a>
+          <a href="#">Keyboard</a>
+          <a href="#">Mouse</a>
+          <a href="#">Health</a>
+        </div>
+      </div>
+    </div>
   </p-sidebar>
 </div>
 <!-- Search Sidebar end -->
