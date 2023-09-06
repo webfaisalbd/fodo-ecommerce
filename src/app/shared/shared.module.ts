@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 import { RouterModule } from '@angular/router';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -8,6 +9,9 @@ import { ProductBarComponent } from './components/lazy-components/product-bar/pr
 import { NewsletterComponent } from './components/newsletter/newsletter.component';
 import { HeaderTopComponent } from './components/header/header-top/header-top.component';
 import { NavbarComponent } from './components/header/navbar/navbar.component';
+
+
+import { SidebarModule } from 'primeng/sidebar';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,11 @@ import { NavbarComponent } from './components/header/navbar/navbar.component';
     HeaderTopComponent,
     NavbarComponent,
   ],
-  imports: [CommonModule, RouterModule],
+  imports: [
+    CommonModule, 
+    RouterModule, 
+    SidebarModule,
+  ],
   exports: [
     HeaderComponent,
     FooterComponent,

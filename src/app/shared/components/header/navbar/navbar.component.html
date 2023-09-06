@@ -27,10 +27,10 @@
     <!-- icons container start  -->
     <div class="icons-container">
       <ul class="icons-list">
-        <li class="hamburger"><i class="bi bi-list"></i></li>
+        <li class="hamburger" (click)="hamburgerSidebarVisible = true"><i class="bi bi-list"></i></li>
         <li [routerLink]="['/cart']"><a><i class="bi bi-cart3"></i><span class="icon-value">9</span></a></li>
         <li [routerLink]="['/wishlist']"><a><i class="bi bi-heart"></i><span class="icon-value">3</span></a></li>
-        <li><i class="bi bi-search"></i></li>
+        <li (click)="searchSidebarVisible = true"><i class="bi bi-search"></i></li>
         <li [routerLink]="['/auth/login']"><a><i class="bi bi-person"></i></a></li>
       </ul>
     </div>
@@ -39,3 +39,33 @@
   </nav>
 </div>
 <!--  navigation end -->
+
+
+
+<!-- Hamburger Sidebar start -->
+<div class="card flex justify-content-center">
+  <p-sidebar [(visible)]="hamburgerSidebarVisible" position="left">
+    <h3>Sidebar</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </p-sidebar>
+</div>
+<!-- Hamburger Sidebar end -->
+
+
+
+<!-- Search Sidebar start -->
+<div class="card flex justify-content-center">
+  <p-sidebar [(visible)]="searchSidebarVisible" position="right">
+    <h3>Sidebar</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </p-sidebar>
+</div>
+<!-- Search Sidebar end -->
