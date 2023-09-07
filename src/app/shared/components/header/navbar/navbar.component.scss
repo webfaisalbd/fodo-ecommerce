@@ -76,7 +76,44 @@ nav {
 
 
 
-//   Search Sidebar 
+
+
+// Hamburger Sidebar start
+.mobile-sideNav {
+    margin-top: 20px;
+
+    ul {
+        li {
+            padding: 10px 0;
+            margin: 5px 0;
+            border-bottom: 1px solid lightgray;
+            font-weight: 600;
+            color: black;
+        }
+
+        li.dropdown:after {
+            content: '+';
+            float: right;
+            color: var(--secondary-color);
+            font-size: var(--size-md);
+            padding: 0px 7px;
+            border: 1px solid #F1F1F1;
+            border-radius: 50%;
+        }
+    }
+}
+
+// Hamburger Sidebar start end
+
+
+
+
+
+
+
+
+
+//   Search Sidebar start
 
 .offcanvas-body {
 
@@ -85,12 +122,12 @@ nav {
         // border: 1px solid red;
         display: flex;
         justify-content: space-between;
-        
+
         input {
             // border: 1px solid blue;
             padding: 10px 15px;
         }
-        
+
         button {
             padding: 10px 15px;
             background: var(--primary-color);
@@ -125,6 +162,12 @@ nav {
 }
 
 
+// Search Sidebar end 
+
+
+
+
+
 
 
 
@@ -154,4 +197,3 @@ nav {
         }
     }
 }
-
