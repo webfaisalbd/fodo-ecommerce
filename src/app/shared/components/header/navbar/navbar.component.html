@@ -28,7 +28,7 @@
     <div class="icons-container">
       <ul class="icons-list">
         <li class="hamburger" (click)="hamburgerSidebarVisible = true"><i class="bi bi-list"></i></li>
-        <li [routerLink]="['/cart']"><a><i class="bi bi-cart3"></i><span class="icon-value">9</span></a></li>
+        <li (click)="cartSidebarVisible = true"><a><i class="bi bi-cart3"></i><span class="icon-value">9</span></a></li>
         <li [routerLink]="['/wishlist']"><a><i class="bi bi-heart"></i><span class="icon-value">3</span></a></li>
         <li (click)="searchSidebarVisible = true"><i class="bi bi-search"></i></li>
         <li [routerLink]="['/auth/login']"><a><i class="bi bi-person"></i></a></li>
@@ -59,6 +59,109 @@
   </p-sidebar>
 </div>
 <!-- Hamburger Sidebar end -->
+
+
+
+
+<!-- Cart Sidebar start -->
+<div class="card flex justify-content-center">
+  <p-sidebar [(visible)]="cartSidebarVisible" position="right">
+    <h3>Shopping Cart</h3>
+    <div class="offcanvas-body">
+      <!-- cart box start -->
+      <div class="cart-box">
+        <!-- single cart item start  -->
+        <div class="cart-item" style="gap: 15px;">
+          <div class="product-img">
+            <img src="../../../../../assets/images/shopping-cart/1.png" alt="">
+          </div>
+          <div class="product-description">
+            <div class="product-name">
+              <a href="#">Purnava Omega 3 Egg</a>
+            </div>
+            <div class="price-close-button">
+              <div class="price-amount">
+                <span>$</span>
+                <span>39</span>
+                <span>×</span>
+                <span>3</span>
+              </div>
+              <div class="close-btn">
+                <button type="button"><i class="bi bi-x-lg"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- single cart item end  -->
+        <hr>
+        <!-- single cart item start  -->
+        <div class="cart-item" style="gap: 15px;">
+          <div class="product-img">
+            <img src="../../../../../assets/images/shopping-cart/2.png" alt="">
+          </div>
+          <div class="product-description">
+            <div class="product-name">
+              <a href="#">Purnava Omega 3 Egg</a>
+            </div>
+            <div class="price-close-button">
+              <div class="price-amount">
+                <span>$</span>
+                <span>39</span>
+                <span>×</span>
+                <span>3</span>
+              </div>
+              <div class="close-btn">
+                <button type="button"><i class="bi bi-x-lg"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- single cart item end  -->
+        <hr>
+        <!-- single cart item start  -->
+        <div class="cart-item" style="gap: 15px;">
+          <div class="product-img">
+            <img src="../../../../../assets/images/shopping-cart/5.png" alt="">
+          </div>
+          <div class="product-description">
+            <div class="product-name">
+              <a href="#">Purnava Omega 3 Egg</a>
+            </div>
+            <div class="price-close-button">
+              <div class="price-amount">
+                <span>$</span>
+                <span>39</span>
+                <span>×</span>
+                <span>3</span>
+              </div>
+              <div class="close-btn">
+                <button type="button"><i class="bi bi-x-lg"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- single cart item end  -->
+      </div>
+      <!-- cart box end -->
+
+      <hr>
+
+      <div class="total-view-checkout">
+        <div class="sub-total">
+          <h5 class="fw-bold">Sub Total:</h5>
+          <h5 class="fw-bold">$ 203.00</h5>
+        </div>
+        <div class="view-cart-btn" [routerLink]="['/cart']">
+          <a>View Cart</a>
+        </div>
+        <div class="checkout-btn" [routerLink]="['/checkout']">
+          <a>Checkout Now</a>
+        </div>
+      </div>
+    </div>
+  </p-sidebar>
+</div>
+<!-- Cart Sidebar end -->
 
 
 

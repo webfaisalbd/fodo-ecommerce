@@ -13,6 +13,7 @@ export class NavbarComponent implements OnInit {
   }
 
   hamburgerSidebarVisible = false;
+  cartSidebarVisible = false;
   searchSidebarVisible = false;
 
 }

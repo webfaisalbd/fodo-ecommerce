@@ -52,7 +52,7 @@ nav {
                 padding: 0.625rem;
                 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                 position: relative;
-                
+
                 &:hover {
                     background: rgb(92, 140, 19);
                     transition: 0.6s ease-in-out;
@@ -113,6 +113,136 @@ nav {
 }
 
 // Hamburger Sidebar start end
+
+
+
+
+
+//  Cart Sidebar start
+.offcanvas-body {
+    .cart-box {
+        // border: 1px solid red;
+        margin-top: 15px;
+
+        .cart-item {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+
+            .product-img {
+                width: 75px;
+                padding: 5px;
+                border: 1px solid gray;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .product-description {
+                // border: 1px solid blue;
+                padding: 7px 5px;
+
+                .product-name {
+                    padding-bottom: 10px;
+                    font-size: 15px;
+
+                    a {
+                        &:hover {
+                            color: rgb(92, 140, 19);
+                        }
+                    }
+                }
+
+                .price-close-button {
+                    display: flex;
+                    justify-content: space-between;
+
+                    button {
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                        padding: 7px;
+                        border-radius: 15px;
+
+                        &:hover {
+                            background: rgb(92, 140, 19);
+                            ;
+                        }
+                    }
+                }
+            }
+        }
+
+        hr {
+            color: gray;
+            margin: 15px 0;
+        }
+    }
+
+    hr {
+        color: gray;
+        margin: 30px 0;
+    }
+
+    .total-view-checkout {
+        width: 100%;
+        // border: 1px solid red;
+        
+        .sub-total {
+            margin: 10px 0;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            // border: 1px solid green;
+
+            h5 {
+                font-size: 18px;
+            }
+        }
+
+        .view-cart-btn {
+            margin: 10px 0;
+            cursor: pointer;
+            a {
+                display: block;
+                margin: 10px 0;
+                padding: 10px 0;
+                text-align: center;
+                color: rgb(92, 140, 19);
+                border: 1px solid rgb(92, 140, 19);
+
+                &:hover {
+                    background: #000;
+                    color: white;
+                }
+            }
+        }
+
+
+        .checkout-btn {
+            margin: 10px 0;
+            cursor: pointer;
+            a {
+                display: block;
+                margin: 10px 0;
+                padding: 10px 0;
+                text-align: center;
+                background: rgb(92, 140, 19);
+                color: white;
+                border: 1px solid blue;
+
+                &:hover {
+                    background: #000;
+                }
+            }
+        }
+
+    }
+}
+
+//  Cart Sidebar end
+
 
 
 
