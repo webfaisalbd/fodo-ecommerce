@@ -52,6 +52,15 @@ nav {
                 padding: 0.625rem;
                 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                 position: relative;
+                
+                &:hover {
+                    background: rgb(92, 140, 19);
+                    transition: 0.6s ease-in-out;
+
+                    i {
+                        color: white;
+                    }
+                }
             }
 
             .hamburger {
